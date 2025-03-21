@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .hero-section {
+            width: 100%;
+            min-height: 470px;
+            background-image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('simple-house-01.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            position: absolute;
+            right: 90px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        .nav-menu .active-link {
+            text-decoration: underline;
+        }
+
+        .about-intro {
+            text-align: center;
+            width: 80%;
+            max-width: 700px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .about-description {
+            color: rgb(119, 115, 115);
+            font-size: 18px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .team-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .team-member {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+        }
+
+        .member-name {
+            color: rgb(8, 124, 182);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .member-role {
+            font-size: 20px;
+            color: rgb(209, 89, 143);
+            line-height: 1.5;
+        }
+
+        .member-bio {
+            font-size: 20px;
+            color: rgb(125, 126, 125);
+            line-height: 1.5;
+        }
+
+        .about-background {
+            background-image: url('about-05.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            border-radius: 10px;
+            width: 95%;
+            margin: auto;
+            min-height: 250px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+            padding-top: 90px;
+        }
+
+        .feature-item {
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            line-height: 1.5;
+        }
+
+        .feature-item i {
+            font-size: 90px;
+            color: rgb(174, 173, 173);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn-blue { background-color: #007bff; }
+        .btn-green { background-color: #28a745; }
+        .btn-red { background-color: #a82a2a; }
+
+        .info-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .info-text {
+            max-width: 500px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .team-section { grid-template-columns: 1fr; }
+            .team-member { flex-direction: column; text-align: center; }
+            .features { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .features { grid-template-columns: 1fr; }
+            .feature-item { width: 90%; margin: auto; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a class="active-link" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about-intro">
+        <div class="about-text">
+            <h1>About Simple House</h1>
+            <p class="about-description">Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites.</p>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="about-01.jpg" alt="CEO">
+                </div>
+                <div class="member-info">
+                   <p class="member-name">Jennifer Soft</p>
+                   <p class="member-role">Founder and CEO</p>
+                   <p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="about-01.jpg" alt="CEO">
+                </div>
+                <div class="member-info">
+                   <p class="member-name">Jennifer Soft</p>
+                   <p class="member-role">Founder and CEO</p>
+                   <p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="about-01.jpg" alt="CEO">
+                </div>
+                <div class="member-info">
+                   <p class="member-name">Jennifer Soft</p>
+                   <p class="member-role">Founder and CEO</p>
+                   <p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="about-01.jpg" alt="CEO">
+                </div>
+                <div class="member-info">
+                   <p class="member-name">Jennifer Soft</p>
+                   <p class="member-role">Founder and CEO</p>
+                   <p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fas fa-4x fa-pepper-hot tm-feature-icon"></i>
+            <p class="member-bio"><p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p></p>
+            <button class="btn btn-blue">Read More</button>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-4x fa-pepper-hot tm-feature-icon"></i>
+            <p class="member-bio"><p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p></p>
+            <button class="btn btn-blue">Read More</button>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-4x fa-pepper-hot tm-feature-icon"></i>
+            <p class="member-bio"><p class="member-bio">Vivamus cursus leo nec sem feugiat sagittis. Duis ut feugiat odio, sit amet accumsan odio.</p></p>
+            <button class="btn btn-blue">Read More</button>
+        </div>
+    </section>
+    <div class="info-section">
+        <img src="about-06.jpg" alt="Avocado Dish" class="info-image">
+        <div class="info-text">
+            <h2 class="menu-title">History of our restaurant</h2>
+            <p class="menu-description">Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet justo. Maecenas posuere lorem id augue interdum vehicula. Praesent sed leo eget libero ultricies congue.
+
+                Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to contact TemplateMo for additional permissions about our templates. Thank you.</p>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright © 2020 Simple House | Design: TemplateMo</p>
+    </footer>
+</body>
+</html>

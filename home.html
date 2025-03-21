@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .hero-section {
+            width: 100%;
+            min-height: 470px;
+            background-image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('simple-house-01.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            position: absolute;
+            right: 90px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        .navbar .active-link {
+            text-decoration: underline;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content-wrapper {
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .text-description {
+            color: rgb(119, 115, 115);
+            font-size: 18px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .button-group {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            width: 105px;
+            height: 45px;
+            background-color: white;
+            color: rgb(31, 175, 96);
+            border: 1px solid rgb(31, 175, 96);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            width: 105px;
+            height: 45px;
+            background-color: transparent;
+            color: grey;
+            border: 1px solid grey;
+            border-radius: 5px;
+            transition: 0.3s;
+            align-self: end;
+        }
+
+        .btn-primarys {
+            width: 105px;
+            height: 45px;
+            background-color: rgb(31, 175, 96);
+            color: white;
+            border: 1px solid rgb(31, 175, 96);
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover, .btn:hover {
+            background-color: grey;
+            color: white;
+        }
+        .btn-primarys:hover, .btn:hover {
+            background-color: rgb(31, 175, 96);
+            color: white;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .menu-title {
+            color: rgb(8, 124, 182);
+        }
+
+        .menu-description {
+            text-align: left;
+        }
+
+        .menu-price {
+            color: rgb(34, 200, 109);
+            font-size: 20px;
+        }
+
+        .info-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .info-text {
+            max-width: 500px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 50px;
+            background: #f8f8f8;
+        }
+
+        .footer-text {
+            font-size: 18px;
+            color: rgb(125, 126, 125);
+        }
+
+        .highlight {
+            text-decoration: underline;
+            color: rgb(8, 124, 182);
+        }
+    </style>
+
+    <div class="hero-section">
+        <div class="navbar">
+            <a class="active-link" href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <h1>Welcome to Simple House</h1>
+        <p class="text-description">Total 3 HTML pages are included in this template. Header image has a parallax effect. Feel free to use and modify this template for your projects.</p>
+        <div class="button-group">
+            <button class="btn btn-primarys">Pizza</button>
+            <button class="btn">Salad</button>
+            <button class="btn">Noodle</button>
+        </div>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+    </div>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+        <div class="menu-item">
+            <img src="02.jpg" alt="Dish Image">
+            <h2 class="menu-title">Fusce dictum finibus</h2>
+            <p class="menu-description">Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+            <p class="menu-price">$45 / $55</p>
+        </div>
+    </div>
+    
+
+    <div class="info-section">
+        <img src="img-01.jpg" alt="Avocado Dish" class="info-image">
+        <div class="info-text">
+            <h2 class="menu-title">Maecenas nulla neque</h2>
+            <p class="menu-description">Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to talk to us for additional permissions about our templates. Thank you. <span class="highlight">Talk to us</span> for permissions.</p>
+            <button class="btn btn-primary">Read More</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-text">Copyright © 2020 Simple House | Design: TemplateMo</p>
+    </div>
+</body>
+</html>
